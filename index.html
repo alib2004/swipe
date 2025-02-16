@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+  <body class="bg-gray-50 dark:bg-slate-400">
+    <!-- start header -->
+    <nav class="border-gray-200 dark:bg-gray-900 sticky top-0 nav">
+      <div
+        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+      >
+        <img src="./src/images/logog.png" class="h-8" alt="alibi Logo" />
+        <button
+          type="button"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-100 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 open-nav"
+          aria-controls="navbar-default"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Open main menu</span>
+          <svg
+            class="w-5 h-5"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 17 14"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15"
+            />
+          </svg>
+        </button>
+        <div
+          class="hidden w-full md:block md:w-auto mobile-menu"
+          id="navbar-default"
+        >
+          <ul
+            class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+          >
+            <li>
+              <a
+                href="#about"
+                class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                >Testimonials</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                >FAQ</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                >Download</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                >All Projects</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- finsih header -->
+    <!-- start apps -->
+    <div class="apps p-4 text-center mt-8">
+      <h2 class="apps-header text-4xl font-bold md:text-7xl text-[#183b56]">
+        Simple & Reliable.
+      </h2>
+      <p class="text-xl font-light my-5 max-w-3xl m-auto md:font-medium">
+        Simpler remembers your important details, so you can fill carts, not
+        forms. And everything is encrypted so you can speed safely through
+        checkout.
+      </p>
+      <div class="appsBtns flex justify-center items-center gap-4">
+        <button
+          class="bg-blue-950 text-white py-2 px-5 rounded-xl flex items-center gap-2"
+        >
+          <i class="fa-brands fa-apple fa-2x dark:text-teal-300"></i>
+          <div class="flex flex-col gap-0 dark:text-gray-200">
+            <span class="hidden md:inline-block">Available on</span>
+            App Store
+          </div>
+        </button>
+        <button
+          class="bg-blue-950 text-white py-2 px-5 rounded-xl flex items-center gap-2"
+        >
+          <i class="fa-brands fa-google-play fa-2x dark:text-teal-300"></i>
+          <div class="flex flex-col gap-0 dark:text-gray-200">
+            <span class="hidden md:inline-block">Available on</span>
+            Google Play
+          </div>
+        </button>
+      </div>
+      <img
+        src="./src/images/scene.svg"
+        class="max-w-4xl m-auto my-8 hidden md:block"
+        alt=""
+      />
+    </div>
+    <!-- finish apps -->
+    <!-- start options -->
+    <div
+      class="max-w-[80rem] m-auto options grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 p-5 text-center mt-8"
+    >
+      <div class="flex flex-col gap-4">
+        <i class="fa-solid fa-money-bill fa-4x text-gray-500"></i>
+        <h3 class="text-2xl font-bold">Pay better</h3>
+        <span class="max-w-96 m-auto text-gray-400 dark:text-gray-900"
+          >Speed through checkout and offset delivery at the same time.</span
+        >
+      </div>
+      <div class="flex flex-col gap-4">
+        <i class="fa-solid fa-map-location fa-4x text-gray-500"></i>
+        <h3 class="text-2xl font-bold">Track better</h3>
+        <span class="max-w-96 m-auto text-gray-400 dark:text-gray-900"
+          >Get real-time delivery updates from cart to home in one place.</span
+        >
+      </div>
+      <div class="flex flex-col gap-4">
+        <i class="fa-solid fa-bag-shopping fa-4x text-gray-500"></i>
+        <h3 class="text-2xl font-bold">Shop better</h3>
+        <span class="max-w-96 m-auto text-gray-400 dark:text-gray-900"
+          >Upgrade with personal settings from your favorite stores.</span
+        >
+      </div>
+    </div>
+    <!-- finish options -->
+    <!-- start about -->
+    <div
+      class="about m-4 my-8 p-4 text-blue-900 max-w-[80rem] mx-auto md:flex md:justify-between"
+      id="about"
+    >
+      <div class="aboutLeft flex gap-5 flex-col md:w-[50%]">
+        <h3 class="text-3xl font-bold">A thoughtful way to pay</h3>
+        <p class="text-lg font-light">
+          Simpler App remembers your important details, so you can fill carts,
+          not forms. And everything is encrypted so you can speed safely through
+          checkout.
+        </p>
+        <p class="text-lg font-light">
+          Now, you can offset the carbon emissions produced by your
+          deliveries—for free. All you have to do is check out with Shop Pay,
+          one of the first carbon-neutral way to pay.
+        </p>
+        <button
+          class="inline-block w-40 bg-blue-950 text-white py-3 px-4 rounded-lg text-xl"
+        >
+          Laern More
+          <i class="fas fa-external-link-alt"></i>
+        </button>
+      </div>
+      <div class="aboutRight md:w-[30%]">
+        <img src="./src/images/scene-3.svg" class="w-full" alt="" />
+      </div>
+    </div>
+    <div
+      class="about m-4 my-8 p-4 text-blue-900 max-w-[80rem] mx-auto md:flex md:justify-between"
+    >
+      <div class="aboutRight md:w-[40%]">
+        <img src="./src/images/scene-2.svg" class="w-full" alt="" />
+      </div>
+      <div class="aboutLeft flex gap-5 flex-col md:w-[50%]">
+        <h3 class="text-3xl font-bold">Get it. Don't sweat it.</h3>
+        <p class="text-lg font-light">
+          We track your desktop and mobile keyword rankings from any location
+          and plot your full ranking history on a handy graph.
+        </p>
+        <p class="text-lg font-light">
+          You can set up automated ranking reports to be sent to your email
+          address, so you’ll never forget to check your ranking progress.
+        </p>
+        <button
+          class="inline-block w-40 bg-blue-950 text-white py-3 px-4 rounded-lg text-xl"
+        >
+          Laern More
+          <i class="fas fa-external-link-alt"></i>
+        </button>
+      </div>
+    </div>
+    <div
+      class="aboutPercent grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 p-5 gap-8 text-gray-600 max-w-[80rem] mx-auto"
+    >
+      <div class="border-2 p-10 flex flex-col gap-3 rounded-lg border-gray-200">
+        <span class="text-4xl">98%</span>
+        <span class="text-xl"
+          >Average satisfaction rating received in the past year.</span
+        >
+      </div>
+      <div class="border-2 p-10 flex flex-col gap-3 rounded-lg border-gray-200">
+        <span class="text-4xl">24/7</span>
+        <span class="text-xl"
+          >Our support team is a quick chat or email away.</span
+        >
+      </div>
+      <div class="border-2 p-10 flex flex-col gap-3 rounded-lg border-gray-200">
+        <span class="text-4xl">220k+</span>
+        <span class="text-xl"
+          >Extension installs from the two major mobile app stores.</span
+        >
+      </div>
+    </div>
+    <!-- finish about -->
+    <!-- start brands -->
+    <div class="brands max-w-[80rem] mx-auto p-5 text-center">
+      <span>We're proudly featured by</span>
+      <div class="grid grid-cols-3 md:grid-cols-6 mx-auto text-center my-5">
+        <div>
+          <i class="fab fa-stripe text-8xl"></i>
+        </div>
+        <div>
+          <i class="fab fa-digg text-8xl"></i>
+        </div>
+        <div>
+          <i class="fab fa-fedex text-8xl"></i>
+        </div>
+        <div>
+          <i class="fab fa-ember text-8xl"></i>
+        </div>
+        <div>
+          <i class="fab fa-d-and-d-beyond text-8xl"></i>
+        </div>
+        <div>
+          <i class="fab fa-angrycreative text-8xl"></i>
+        </div>
+      </div>
+    </div>
+    <!-- finish brands -->
+    <!-- start customer love -->
+    <div class="customers text-center mb-10">
+      <span class="text-4xl font-semibold pb-2 block">Customers love it</span>
+      <p class="font-light p-6 text-xl md:w-[35%] md:m-auto">
+        The final result of our formula at work. Check out what our clientshave
+        to say about our mobile app and our support team.
+      </p>
+    </div>
+    <!-- finish customer love -->
+    <!-- start customer -->
+    <div class="customers max-w-[80rem] m-auto">
+      <div class="customers-brands p-5 gap-5 grid grid-cols-1 md:grid-cols-3">
+        <div
+          class="item-customers border border-gray-300 flex flex-col justify-center items-center p-8 gap-5 rounded-lg"
+        >
+          <img src="./src/images/airbnb.svg" class="w-52" />
+          <div class="starts text-lg">
+            <i class="fas fa-star text-yellow-400"></i>
+            <i class="fas fa-star text-yellow-400"></i>
+            <i class="fas fa-star text-yellow-400"></i>
+            <i class="fas fa-star text-yellow-400"></i>
+            <i class="fa-regular fa-star text-yellow-400"></i>
+          </div>
+          <p class="text-center text-gray-500 pb-5">
+            Swipe has replaced the whiteboard for us! Being able to jump in the
+            same file with someone fills the gap of not being able to gather in
+            person.
+          </p>
+          <a href="#" class="font-semibold text-lg">
+            <i class="fa-solid fa-book-open"></i>
+            <span>Read Story</span>
+          </a>
+        </div>
+        <div
+          class="item-customers border border-gray-300 flex flex-col justify-center items-center p-8 gap-5 rounded-lg md:mt-[-30px] md:mb-[30px]"
+        >
+          <img src="./src/images/corsair.svg" class="w-52" />
+          <div class="starts text-lg">
+            <i class="fas fa-star text-yellow-400"></i>
+            <i class="fas fa-star text-yellow-400"></i>
+            <i class="fas fa-star text-yellow-400"></i>
+            <i class="fas fa-star text-yellow-400"></i>
+            <i class="fa-regular fa-star text-yellow-400"></i>
+          </div>
+          <p class="text-center text-gray-500 pb-5">
+            Swipe has replaced the whiteboard for us! Being able to jump in the
+            same file with someone fills the gap of not being able to gather in
+            person.
+          </p>
+          <a href="#" class="font-semibold text-lg">
+            <i class="fa-solid fa-book-open"></i>
+            <span>Read Story</span>
+          </a>
+        </div>
+        <div
+          class="item-customers border border-gray-300 flex flex-col justify-center items-center p-8 gap-5 rounded-lg"
+        >
+          <img src="./src/images/paypal.svg" class="w-52" />
+          <div class="starts text-lg">
+            <i class="fas fa-star text-yellow-400"></i>
+            <i class="fas fa-star text-yellow-400"></i>
+            <i class="fas fa-star text-yellow-400"></i>
+            <i class="fas fa-star text-yellow-400"></i>
+            <i class="fa-regular fa-star text-yellow-400"></i>
+          </div>
+          <p class="text-center text-gray-500 pb-5">
+            Swipe has replaced the whiteboard for us! Being able to jump in the
+            same file with someone fills the gap of not being able to gather in
+            person.
+          </p>
+          <a href="#" class="font-semibold text-lg">
+            <i class="fa-solid fa-book-open"></i>
+            <span>Read Story</span>
+          </a>
+        </div>
+        <div
+          class="item-customers border border-gray-300 flex flex-col justify-center items-center p-8 gap-5 rounded-lg"
+        >
+          <img src="./src/images/ebay.svg" class="w-52" />
+          <div class="starts text-lg">
+            <i class="fas fa-star text-yellow-400"></i>
+            <i class="fas fa-star text-yellow-400"></i>
+            <i class="fas fa-star text-yellow-400"></i>
+            <i class="fas fa-star text-yellow-400"></i>
+            <i class="fa-regular fa-star text-yellow-400"></i>
+          </div>
+          <p class="text-center text-gray-500 pb-5">
+            Swipe has replaced the whiteboard for us! Being able to jump in the
+            same file with someone fills the gap of not being able to gather in
+            person.
+          </p>
+          <a href="#" class="font-semibold text-lg">
+            <i class="fa-solid fa-book-open"></i>
+            <span>Read Story</span>
+          </a>
+        </div>
+        <div
+          class="item-customers border border-gray-300 flex flex-col justify-center items-center p-8 gap-5 rounded-lg md:mt-[-30px] md:mb-[30px]"
+        >
+          <img src="./src/images/northwestern.svg" class="w-52" />
+          <div class="starts text-lg">
+            <i class="fas fa-star text-yellow-400"></i>
+            <i class="fas fa-star text-yellow-400"></i>
+            <i class="fas fa-star text-yellow-400"></i>
+            <i class="fas fa-star text-yellow-400"></i>
+            <i class="fa-regular fa-star text-yellow-400"></i>
+          </div>
+          <p class="text-center text-gray-500 pb-5">
+            Swipe has replaced the whiteboard for us! Being able to jump in the
+            same file with someone fills the gap of not being able to gather in
+            person.
+          </p>
+          <a href="#" class="font-semibold text-lg">
+            <i class="fa-solid fa-book-open"></i>
+            <span>Read Story</span>
+          </a>
+        </div>
+        <div
+          class="item-customers border border-gray-300 flex flex-col justify-center items-center p-8 gap-5 rounded-lg"
+        >
+          <img src="./src/images/elastic.svg" class="w-52" />
+          <div class="starts text-lg">
+            <i class="fas fa-star text-yellow-400"></i>
+            <i class="fas fa-star text-yellow-400"></i>
+            <i class="fas fa-star text-yellow-400"></i>
+            <i class="fas fa-star text-yellow-400"></i>
+            <i class="fa-regular fa-star text-yellow-400"></i>
+          </div>
+          <p class="text-center text-gray-500 pb-5">
+            Swipe has replaced the whiteboard for us! Being able to jump in the
+            same file with someone fills the gap of not being able to gather in
+            person.
+          </p>
+          <a href="#" class="font-semibold text-lg">
+            <i class="fa-solid fa-book-open"></i>
+            <span>Read Story</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- finish customer -->
+    <!-- start faq -->
+    <div class="faq my-10 max-w-[80rem] m-auto">
+      <span class="text-4xl font-semibold block text-center"
+        >Facts & Questions</span
+      >
+      <p class="font-light p-6 text-xl md:w-[35%] md:m-auto text-center">
+        Have a question? Read through our FAQ below. If you can't find an
+        answer,please email our support team. We're here to help.
+      </p>
+      <div class="accardion max-w-[70rem] m-auto p-5">
+        <ul class="flex flex-col bg-gray-300 rounded-2xl overflow-hidden">
+          <li
+            class="bg-gray-300 dark:bg-gray-500 dark:text-gray-300 p-2 dark:border-gray-400"
+            x-data="accordion(1)"
+          >
+            <h2
+              @click="handleClick()"
+              class="flex flex-row justify-between items-center font-semibold p-3 cursor-pointer"
+            >
+              <span>What is the purpose of a FAQ?</span>
+              <svg
+                :class="handleRotate()"
+                class="fill-current text-black dark:text-gray-200 h-6 w-6 transform transition-transform duration-500"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885 M18.406,10c0,4.644-3.763,8.406-8.406,8.406S1.594,14.644,1.594,10S5.356,1.594,10,1.594S18.406,5.356,18.406,10 M17.521,10c0-4.148-3.373-7.521-7.521-7.521c-4.148,0-7.521,3.374-7.521,7.521c0,4.147,3.374,7.521,7.521,7.521C14.148,17.521,17.521,14.147,17.521,10"
+                ></path>
+              </svg>
+            </h2>
+            <div
+              x-ref="tab"
+              :style="handleToggle()"
+              class="border-l-2 border-purple-600 overflow-hidden max-h-0 duration-500 transition-all"
+            >
+              <p class="p-3 text-gray-900 dark:text-gray-300">
+                At Themesberg, our mission has always been focused on bringing
+                openness and transparency to the design process. We've always
+                believed that by providing a space where designers can share
+                ongoing work not only empowers them to make better products, it
+                also helps them grow. We're proud to be a part of creating a
+                more open culture and to continue building a product that
+                supports this vision.
+              </p>
+            </div>
+          </li>
+          <li
+            class="bg-gray-300 dark:bg-gray-500 dark:text-gray-300 p-2 dark:border-gray-400"
+            x-data="accordion(2)"
+          >
+            <h2
+              @click="handleClick()"
+              class="flex flex-row justify-between items-center font-semibold p-3 cursor-pointer"
+            >
+              <span>What is a FAQ document?</span>
+              <svg
+                :class="handleRotate()"
+                class="fill-current text-black dark:text-gray-200 h-6 w-6 transform transition-transform duration-500"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885 M18.406,10c0,4.644-3.763,8.406-8.406,8.406S1.594,14.644,1.594,10S5.356,1.594,10,1.594S18.406,5.356,18.406,10 M17.521,10c0-4.148-3.373-7.521-7.521-7.521c-4.148,0-7.521,3.374-7.521,7.521c0,4.147,3.374,7.521,7.521,7.521C14.148,17.521,17.521,14.147,17.521,10"
+                ></path>
+              </svg>
+            </h2>
+            <div
+              x-ref="tab"
+              :style="handleToggle()"
+              class="border-l-2 border-purple-600 overflow-hidden max-h-0 duration-500 transition-all"
+            >
+              <p class="p-3 text-gray-900 dark:text-gray-300">
+                At Themesberg, our mission has always been focused on bringing
+                openness and transparency to the design process. We've always
+                believed that by providing a space where designers can share
+                ongoing work not only empowers them to make better products, it
+                also helps them grow. We're proud to be a part of creating a
+                more open culture and to continue building a product that
+                supports this vision.
+              </p>
+            </div>
+          </li>
+          <li
+            class="bg-gray-300 dark:bg-gray-500 dark:text-gray-300 p-2 dark:border-gray-400"
+            x-data="accordion(3)"
+          >
+            <h2
+              @click="handleClick()"
+              class="flex flex-row justify-between items-center font-semibold p-3 cursor-pointer"
+            >
+              <span>What are the top 10 interview questions?</span>
+              <svg
+                :class="handleRotate()"
+                class="fill-current text-black dark:text-gray-200 h-6 w-6 transform transition-transform duration-500"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885 M18.406,10c0,4.644-3.763,8.406-8.406,8.406S1.594,14.644,1.594,10S5.356,1.594,10,1.594S18.406,5.356,18.406,10 M17.521,10c0-4.148-3.373-7.521-7.521-7.521c-4.148,0-7.521,3.374-7.521,7.521c0,4.147,3.374,7.521,7.521,7.521C14.148,17.521,17.521,14.147,17.521,10"
+                ></path>
+              </svg>
+            </h2>
+            <div
+              x-ref="tab"
+              :style="handleToggle()"
+              class="border-l-2 border-purple-600 overflow-hidden max-h-0 duration-500 transition-all"
+            >
+              <p class="p-3 text-gray-900 dark:text-gray-300">
+                At Themesberg, our mission has always been focused on bringing
+                openness and transparency to the design process. We've always
+                believed that by providing a space where designers can share
+                ongoing work not only empowers them to make better products, it
+                also helps them grow. We're proud to be a part of creating a
+                more open culture and to continue building a product that
+                supports this vision.
+              </p>
+            </div>
+          </li>
+          <li
+            class="bg-gray-300 dark:bg-gray-500 dark:text-gray-300 p-2 dark:border-gray-400"
+            x-data="accordion(4)"
+          >
+            <h2
+              @click="handleClick()"
+              class="flex flex-row justify-between items-center font-semibold p-3 cursor-pointer"
+            >
+              <span>Cookies?</span>
+              <svg
+                :class="handleRotate()"
+                class="fill-current text-black dark:text-gray-200 h-6 w-6 transform transition-transform duration-500"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885 M18.406,10c0,4.644-3.763,8.406-8.406,8.406S1.594,14.644,1.594,10S5.356,1.594,10,1.594S18.406,5.356,18.406,10 M17.521,10c0-4.148-3.373-7.521-7.521-7.521c-4.148,0-7.521,3.374-7.521,7.521c0,4.147,3.374,7.521,7.521,7.521C14.148,17.521,17.521,14.147,17.521,10"
+                ></path>
+              </svg>
+            </h2>
+            <div
+              x-ref="tab"
+              :style="handleToggle()"
+              class="border-l-2 border-purple-600 overflow-hidden max-h-0 duration-500 transition-all"
+            >
+              <p class="p-3 text-gray-900 dark:text-gray-300">
+                At Themesberg, our mission has always been focused on bringing
+                openness and transparency to the design process. We've always
+                believed that by providing a space where designers can share
+                ongoing work not only empowers them to make better products, it
+                also helps them grow. We're proud to be a part of creating a
+                more open culture and to continue building a product that
+                supports this vision.
+              </p>
+            </div>
+          </li>
+          <li
+            class="bg-gray-300 dark:bg-gray-500 dark:text-gray-300 p-2 dark:border-gray-400"
+            x-data="accordion(5)"
+          >
+            <h2
+              @click="handleClick()"
+              class="flex flex-row justify-between items-center font-semibold p-3 cursor-pointer"
+            >
+              <span>Copyright Notice</span>
+              <svg
+                :class="handleRotate()"
+                class="fill-current text-black dark:text-gray-200 h-6 w-6 transform transition-transform duration-500"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885 M18.406,10c0,4.644-3.763,8.406-8.406,8.406S1.594,14.644,1.594,10S5.356,1.594,10,1.594S18.406,5.356,18.406,10 M17.521,10c0-4.148-3.373-7.521-7.521-7.521c-4.148,0-7.521,3.374-7.521,7.521c0,4.147,3.374,7.521,7.521,7.521C14.148,17.521,17.521,14.147,17.521,10"
+                ></path>
+              </svg>
+            </h2>
+            <div
+              x-ref="tab"
+              :style="handleToggle()"
+              class="border-l-2 border-purple-600 overflow-hidden max-h-0 duration-500 transition-all"
+            >
+              <p class="p-3 text-gray-900 dark:text-gray-300">
+                At Themesberg, our mission has always been focused on bringing
+                openness and transparency to the design process. We've always
+                believed that by providing a space where designers can share
+                ongoing work not only empowers them to make better products, it
+                also helps them grow. We're proud to be a part of creating a
+                more open culture and to continue building a product that
+                supports this vision.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- finish faq -->
+    <!-- start downloadApp -->
+    <div class="downApp bg-gray-300 relative py-5">
+      <div class="absolute w-full top-[-40px] z-0 hidden md:block">
+        <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 100" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(209, 213, 219, 1)" offset="0%"></stop><stop stop-color="rgba(209, 213, 219, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,50L80,41.7C160,33,320,17,480,20C640,23,800,47,960,58.3C1120,70,1280,70,1440,73.3C1600,77,1760,83,1920,86.7C2080,90,2240,90,2400,90C2560,90,2720,90,2880,86.7C3040,83,3200,77,3360,61.7C3520,47,3680,23,3840,25C4000,27,4160,53,4320,66.7C4480,80,4640,80,4800,66.7C4960,53,5120,27,5280,28.3C5440,30,5600,60,5760,68.3C5920,77,6080,63,6240,48.3C6400,33,6560,17,6720,18.3C6880,20,7040,40,7200,53.3C7360,67,7520,73,7680,65C7840,57,8000,33,8160,25C8320,17,8480,23,8640,21.7C8800,20,8960,10,9120,8.3C9280,7,9440,13,9600,28.3C9760,43,9920,67,10080,66.7C10240,67,10400,43,10560,41.7C10720,40,10880,60,11040,63.3C11200,67,11360,53,11440,46.7L11520,40L11520,100L11440,100C11360,100,11200,100,11040,100C10880,100,10720,100,10560,100C10400,100,10240,100,10080,100C9920,100,9760,100,9600,100C9440,100,9280,100,9120,100C8960,100,8800,100,8640,100C8480,100,8320,100,8160,100C8000,100,7840,100,7680,100C7520,100,7360,100,7200,100C7040,100,6880,100,6720,100C6560,100,6400,100,6240,100C6080,100,5920,100,5760,100C5600,100,5440,100,5280,100C5120,100,4960,100,4800,100C4640,100,4480,100,4320,100C4160,100,4000,100,3840,100C3680,100,3520,100,3360,100C3200,100,3040,100,2880,100C2720,100,2560,100,2400,100C2240,100,2080,100,1920,100C1760,100,1600,100,1440,100C1280,100,1120,100,960,100C800,100,640,100,480,100C320,100,160,100,80,100L0,100Z"></path></svg>
+      </div>
+      <div class="max-w-[80rem] m-auto grid grid-cols-1 md:grid-cols-2 bg-gray-300 p-5 items-center justify-between">
+        <div class="downAppItem flex flex-col gap-1">
+          <span class="text-2xl block font-semibold">Download App</span>
+          <span class="text-3xl block font-bold">Get started in seconds</span>
+          <p class="py-5 text-lg text-gray-600">
+            Quickly connect to tools and services such as Google Analytics,
+            Intercom or Github to track, measure and optimize performance.
+          </p>
+          <div class="appsBtns flex items-center gap-4">
+            <button
+              class="bg-blue-950 text-white py-2 px-5 rounded-xl flex items-center gap-2"
+            >
+              <i class="fa-brands fa-apple fa-2x dark:text-teal-300"></i>
+              <div class="flex flex-col gap-0 dark:text-gray-200">
+                <span class="hidden md:inline-block">Available on</span>
+                App Store
+              </div>
+            </button>
+            <button
+              class="bg-blue-950 text-white py-2 px-5 rounded-xl flex items-center gap-2"
+            >
+              <i class="fa-brands fa-google-play fa-2x dark:text-teal-300"></i>
+              <div class="flex flex-col gap-0 dark:text-gray-200">
+                <span class="hidden md:inline-block">Available on</span>
+                Google Play
+              </div>
+            </button>
+          </div>
+        </div>
+        <div class="hidden justify-end md:flex">
+          <img src="./src/images/scene-3.svg" class="w-[75%] text-end block z-50" alt="">
+        </div>
+      </div>
+    </div>
+    <!-- finish downloadApp -->
+    <!-- start footer -->
+      <footer class="footer max-w-[80rem] m-auto grid grid-cols-1 md:grid-cols-2 md:items-center md:justify-between my-5">
+        <div class="social p-5 flex flex-col gap-4">
+          <span class="text-xl font-normal">Swipe is a beautiful and free one page tailwind Template created to showcase your awesome mobile app.</span>
+          <ul class="flex gap-4 text-3xl">
+            <li>
+              <a href="#" class="text-blue-600">
+                <i class="fab fa-twitter "></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="text-red-600">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="text-gray-600">
+                <i class="fab fa-github"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="text-green-500 dark:text-gray-300">
+                <i class="fab fa-telegram"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="subscribe p-5 flex flex-col md:items-end">
+          <span class="text-3xl pb-5 block md:self-center md:ml-[120px]">Subscribe</span>
+          <form action="" class="flex flex-col gap-2 md:w-[50%]">
+            <input type="text" placeholder="Example@gmail.com" class="w-full bg-transparent border border-gray-400 dark:border-gray-100 outline-blue-400 p-3 rounded-lg placeholder:text-gray-600 placeholder:text-lg dark:placeholder:text-gray-300">
+            <button type="button" class="bg-gray-600 text-white w-full p-3 rounded-lg font-semibold text-xl">Subscribe</button>
+            <span class="text-gray-500 dark:text-gray-200">No spam. Pinky swear.</span>
+          </form>
+        </div>     
+      </footer>
+      <div class="copyRight flex flex-col items-center gap-4">
+        <img src="./src/images/logog.png" class="w-16">
+        <span class="mb-10 font-light text-lg">Copyright © Ali Beygholeh-2025. All rights reserved.</span>
+      </div>
+    <!-- finish footer -->
+
+    <script src="app.js"></script>
+    <script
+      defer
+      src="https://unpkg.com/alpinejs@3.2.3/dist/cdn.min.js"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js"></script>
+  </body>
+</html>
